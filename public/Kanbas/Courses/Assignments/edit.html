@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Assignment</title>
+</head>
+<body>
+<table width="100%">
+    <tr>
+        <td valign="top">
+            <ul>
+                <li><a href="/Kanbas/Account/AccountNavigation/index.html">Account</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="/Kanbas/Courses/CourseNavigation/index.html">Courses</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </td>
+        <td valign="top">
+            <ul>
+                <li><a href="/Kanbas/Courses/Home/home.html">Home</a></li>
+                <li><a href="/Kanbas/Courses/modules.html">Modules</a></li>
+                <li><a href="https://piazza.com/">Piazza</a></li>
+                <li><a href="https://zoom.us/">Zoom Meetings</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/index.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="/Kanbas/Courses/Grades/grades.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="/Kanbas/Courses/Settings/coursedetails.html">Settings</a></li>
+            </ul>
+        </td>
+        <td valign="top">
+            <select>
+                <option>SpeedGrader</option>
+                <option>Export</option>
+            </select>
+            <hr/>
+
+            <label for="assignmentName" ><h3>Assignment Name</h3></label>
+            <input value="Assignment 1 - HTML" id="assignmentName" placeholder="Assignment Name" title="Name of Assignment"/><br/>
+            <br/>
+            <textarea id="assignmentDescription" cols="50" rows="5" placeholder="Assignment Description..." title="Write Assignment Description here"> This is the first assignment to build Kanbas.</textarea>
+            <br/>
+            <br/>
+            <label for="assignmentPoints">Points:</label>
+            <input id="assignmentPoints" placeholder="Point value" title="Point value of Assignment" value="100" type="number" max="100" min="0"/>
+            <br/>
+            <br/>
+            <label for="assignmentGroup">Assignment Group:</label>
+            <select id="assignmentGroup">
+                <option>ASSIGNMENTS</option>
+                <option>QUIZZES</option>
+                <option>EXAMS</option>
+                <option>Project</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="gradeType">Display Grade as:</label>
+            <select id="gradeType">
+                <option>Percentage</option>
+                <option>Points</option>
+                <option>Decimal</option>
+                <option>Number</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="submissionType">Submission Type:</label>
+            <select id="submissionType">
+                <option>Online</option>
+                <option>None</option>
+            </select>
+            <br/>
+            <br/>
+            <label>Online Entry Options:</label>
+            <br/>
+            <input type="checkbox"  id="textEntry" checked/>
+            <label for="textEntry">Text Entry</label>    <br/>
+            <input type="checkbox"  id="websiteURL" checked/>
+            <label for="websiteURL">Website URL</label>    <br/>
+            <input type="checkbox" id="mediaRecordings" checked/>
+            <label for="mediaRecordings">Media Recordings</label> <br/>
+            <input type="checkbox" id="studentAnnotation"/>
+            <label for="studentAnnotation">Student Annotation</label> <br/>
+            <input type="checkbox" id="fileUploads" checked/>
+            <label for="fileUploads">File Uploads</label>
+            <br/>
+            <br/>
+            <label for="attempts">Submission Attempts:</label>
+            <select id="attempts">
+                <option>Unlimited</option>
+                <option>One</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="plagiarism">Plagiarism Reiew:</label>
+            <select id="plagiarism">
+                <option>None</option>
+                <option>External</option>
+            </select>
+            <br/>
+            <br/>
+            <label>Group Assignment:</label>
+            <input type="checkbox"  id="group"/>
+            <label for="group">This is a group assignment</label>    <br/>
+            <br/>
+            <label>Peer Review:</label>
+            <input type="checkbox"  id="peerReview"/>
+            <label for="peerReview">Require Peer Reviews</label>    <br/>
+            <br/>
+            <h4>Assign:</h4>
+            <label>Assign to:</label>
+            <input placeholder="Everyone" value="Everyone"/>
+            <br/>
+            <br/>
+            <label> Due:</label>
+            <input type="datetime-local" min="2023-09-06 00:00" max="2023-09-20 23:59" value="2023-09-18 23:59"/>
+            <br/>
+            <br/>
+            <label>Available From:</label>
+            <input type="datetime-local" value="2023-09-06 00:00"/>
+            <br/>
+            <br/>
+            <label>Until:</label>
+            <input type="datetime-local" value="2023-09-20 23:59"/>
+            <br/>
+            <br/>
+
+            <form action="/Kanbas/Courses/Assignments/index.html">
+                <button>Cancel</button>
+                <button>Save</button>
+            </form>
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

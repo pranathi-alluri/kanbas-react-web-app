@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile</title>
+</head>
+<body>
+<table width="100%">
+    <tr>
+        <td valign="top">
+            <ul>
+                <li><a href="/Kanbas/Account/AccountNavigation/index.html">Account</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="/Kanbas/Courses/CourseNavigation/index.html">Courses</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </td>
+        <td valign="top">
+            <ul>
+                <li><a href="/Kanbas/Account/notifications.html">Notifications</a></li>
+                <li><a href="/Kanbas/Account/Profile/index.html">Profile</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">ePortfolios</a></li>
+                <li><a href="#">Shared Content</a></li>
+                <li><a href="#">The Hub</a></li>
+                <li><a href="#">Qwickly Course Tools</a></li>
+                <li><a href="#">Global Announcements</a></li>
+            </ul>
+        </td>
+        <td>
+            <h2>Pranathi Alluri</h2>
+            <label for="profileName">Name:*</label>
+            <input id="profileName" value="Pranathi Alluri" placeholder="First & Last Name"/>
+            <label for="pronouns">Pronouns:</label>
+            <select id="pronouns">
+                <option>None</option>
+                <option>she/her/hers</option>
+                <option>he/him/his</option>
+                <option>they/them</option>
+                <option>other</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="title">Title:</label>
+            <input id="title" placeholder="prefix"/>
+
+            <h3>Contact</h3>
+            No registered services, you can add some on the <a href="#">settings</a> page.
+
+            <h3>Biography</h3>
+            <textarea id="bio" cols="50" rows="5" placeholder="Write a summary about yourself" title="Write Bio"> Data Science and BNS student</textarea>
+            <br/>
+
+            <h3> Links</h3>
+            <ul>
+                <li><a href="https://www.youtube.com/">YouTube</a></li>
+            </ul>
+
+            <table>
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th></th>
+                    <th>URL</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr valign="top">
+                    <td>
+                        <input id="link1" value="Youtube" placeholder="Name"/>
+                    </td>
+                    <td> &rarr; </td>
+                    <td><input id="url1" value="https://www.youtube.com/" placeholder="Link"/></td>
+                    <td><a href="#">Remove</a> </td>
+                </tr>
+                </tbody>
+            </table>
+            <button>Add another link</button>
+            <br/>
+
+            <form action="/Kanbas/Account/Profile/index.html">
+                <button> Cancel</button>
+                <button>Save Profile</button>
+            </form>
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
