@@ -1,0 +1,120 @@
+.course-assignment-header{
+    border-bottom: 1px solid lightgray;
+    margin-left: 21px;
+    padding-top: 15px;
+    font-size: 1.10em;
+    margin-right: 20px;
+    color: red;
+}
+
+.breadcrumb .fa {
+    font-size: 1.10em;
+    margin-right: 20px;
+}
+
+.breadcrumb-item {
+    font-size:0.9em;
+}
+
+.assignment-content {
+    margin-top: 15px;
+}
+
+.assignment-content .wd-assignment-buttons {
+    padding-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.assignment-content .wd-assignment-buttons .standard-bttn {
+    padding:5px 10px 5px 10px;
+    border: lightgray solid 1px;
+    background-color: whitesmoke;
+    color:dimgray;
+    margin: 0 2px 0 2px;
+    border-radius: 2px;
+    font-size: 0.7em;
+}
+
+.wd-assignment-buttons .btn-danger {
+    border: lightgray solid 1px;
+    margin: 0 2px 0 2px;
+    border-radius: 2px;
+    font-size: 0.7em;
+}
+
+.assignment-search {
+    font-size: 0.65em;
+    color:lightgray;
+}
+
+.wd-assignment-modules {
+    margin:20px;
+    font-size: 0.8em;
+
+}
+
+.wd-assignment-modules .list-group{
+    border-radius: 0;}
+
+.wd-assignment-modules .list-group-item{
+    margin:0;
+
+}
+
+.wd-assignment-modules .module-content {
+    border-left: green solid 4px;
+    padding-left: 4px;
+}
+
+.wd-assignment-modules .fa {
+    color: gray;
+}
+
+.rounded-corners {
+    border-radius: 50px;
+    border: gray solid 1px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.wd-assignment-modules .assignment-title {
+    padding-left: 8px;
+    background-color: whitesmoke;
+    font-weight: bold;
+}
+
+.wd-assignment-modules .fa-check-circle {
+    color: green;
+}
+
+.wd-assignment-modules .fa-edit {
+    color: green;
+    padding-left:7px;
+}
+
+.assignment-text {
+    margin-left: 12px;
+}
+
+.wd-assignment-modules .assignment-content {
+    border-left: green solid 4px;
+    padding-left: 6px;
+}
+
+.wd-assignment-header {
+    font-weight: bold;
+    margin-bottom: 3px;
+
+}
+
+.wd-assignment-extra {
+    font-size: 0.7em;
+    margin-bottom: 2px;
+
+}
+
+.wd-assignment-modules .row{
+    margin-bottom: 12px;
+}

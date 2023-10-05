@@ -2,96 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Edit Profile</title>
+    <title>Profile</title>
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/kanbas-react-web-app/public/vendors/bootstrap/css/bootstrap.min.css"/>
+    <link href="/kanbas-react-web-app/public/index.css" rel="stylesheet"/>
+    <link href="/kanbas-react-web-app/public/Kanbas/KanbasNavigation/index.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
 </head>
+
 <body>
-<table width="100%">
-    <tr>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/AccountNavigation/index.html">Account</a></li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/CourseNavigation/index.html">Courses</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/notifications.html">Notifications</a></li>
-                <li><a href="/Kanbas/Account/Profile/index.html">Profile</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">ePortfolios</a></li>
-                <li><a href="#">Shared Content</a></li>
-                <li><a href="#">The Hub</a></li>
-                <li><a href="#">Qwickly Course Tools</a></li>
-                <li><a href="#">Global Announcements</a></li>
-            </ul>
-        </td>
-        <td>
-            <h2>Pranathi Alluri</h2>
-            <label for="profileName">Name:*</label>
-            <input id="profileName" value="Pranathi Alluri" placeholder="First & Last Name"/>
-            <label for="pronouns">Pronouns:</label>
-            <select id="pronouns">
-                <option>None</option>
-                <option>she/her/hers</option>
-                <option>he/him/his</option>
-                <option>they/them</option>
-                <option>other</option>
-            </select>
-            <br/>
-            <br/>
-            <label for="title">Title:</label>
-            <input id="title" placeholder="prefix"/>
 
-            <h3>Contact</h3>
-            No registered services, you can add some on the <a href="#">settings</a> page.
+<div class="row">
+    <div class="col navigation-col">
+        <div class="list-group wd-kanbas-navigation">
+            <a href="/kanbas-react-web-app/public/Kanbas/Account/Profile/index.html" class="list-group-item list-group-item-action active" aria-current="true">
+                <i class="fa fa-user-circle fa-3x" style="color:gray"></i>
+                <br>
+                Account</a>
+            <a href="/kanbas-react-web-app/public/Kanbas/Dashboard/index.html" class="list-group-item list-group-item-action">
+                <i class="fa fa-tachometer-alt fa-2x"></i>
+                <br>
+                Dashboard</a>
+            <a class="list-group-item list-group-item-action" href="/kanbas-react-web-app/public/Kanbas/Courses/Home/home.html">
+                <i class="fa fa-book fa-2x"></i>
+                <br>
+                Courses</a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <i class="fa fa-calendar-alt fa-2x"></i>
+                <br>Calendar</a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <i class="fa fa-inbox fa-2x"></i>
+                <br>Inbox</a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <i class="fa fa-clock fa-2x"></i>
+                <br>History</a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <i class="fab fa-youtube fa-2x" style="color: red"></i><br>Studio</a>
+            <a class="list-group-item list-group-item-action" href="#"><i class="fa fa-sign-out-alt fa-2x" ></i><br>Commons</a>
+            <a class="list-group-item list-group-item-action" href="#"><i class="fa fa-question-circle fa-2x"></i><br>Help</a>
+        </div>
+    </div>
+    <div class="col">
+        <header class="profile-header">
+            <i class="fa fa-bars"></i>
+            <a class="navbar-text" href="index.html">Pranathi Alluri's Profile</a>
+        </header>
+        <div class="row">
+            <div class="col account-col">
+                <div class="list-group wd-account-nav">
+                    <a class="list-group-item list-group-item-action" href="../notifications.html">Notifications</a>
+                    <a class="list-group-item list-group-item-action active" aria-current="true" href="/Kanbas/Account/Profile/index.html">Profile</a>
+                    <a class="list-group-item list-group-item-action" href="#">Files</a>
+                    <a class="list-group-item list-group-item-action" href="#">Settings</a>
+                    <a class="list-group-item list-group-item-action" href="#">ePortfolios</a>
+                    <a class="list-group-item list-group-item-action" href="#">Shared Content</a>
+                    <a class="list-group-item list-group-item-action" href="#">The Hub</a>
+                    <a class="list-group-item list-group-item-action" href="#">Qwickly Course Tools</a>
+                    <a class="list-group-item list-group-item-action" href="#">Global Announcements</a>
+                </div>
+            </div>
+            <div class="col profile-content">
+                    <div class="col">
+                        <a href="index.html" role="button" class="btn btn-light float-end wd-edit-profile-btn">
+                            <i class="fa fa-pencil-alt fa-flip-horizontal"></i>
+                            Cancel Editing</a>
 
-            <h3>Biography</h3>
-            <textarea id="bio" cols="50" rows="5" placeholder="Write a summary about yourself" title="Write Bio"> Data Science and BNS student</textarea>
-            <br/>
+                        <i class="fa fa-user-circle fa-9x profile-pic" style="color:gray"></i>
+                        <div class="col-6">
+                            <label for="profileName" class="form-label">Name:*</label>
+                            <input class="form-control" id="profileName" value="Pranathi Alluri" placeholder="First & Last Name"/>
+                        </div>
+                        <div class="col-6">
+                            <label for="pronouns">Pronouns:</label>
+                            <select class="form-select" id="pronouns">
+                                <option>None</option>
+                                <option>she/her/hers</option>
+                                <option>he/him/his</option>
+                                <option>they/them</option>
+                                <option>other</option>
+                            </select>
+                        </div>
+                        <div class="col-6 wd-edit-profile">
+                            <label for="title" class="form-label">Title:</label>
+                            <input class="form-control" id="title" title="prefix"/>
+                        </div>
 
-            <h3> Links</h3>
-            <ul>
-                <li><a href="https://www.youtube.com/">YouTube</a></li>
-            </ul>
+                        <h3 class="profile-subheadings">Contact</h3>
+                        <p class="wd-profile-text"> No registered services, you can add some on the <a class="wd-profile-links" href="#">settings</a> page.
+                        </p>
 
-            <table>
-                <thead>
-                <tr>
-                    <th>Title</th>
-                    <th></th>
-                    <th>URL</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr valign="top">
-                    <td>
-                        <input id="link1" value="Youtube" placeholder="Name"/>
-                    </td>
-                    <td> &rarr; </td>
-                    <td><input id="url1" value="https://www.youtube.com/" placeholder="Link"/></td>
-                    <td><a href="#">Remove</a> </td>
-                </tr>
-                </tbody>
-            </table>
-            <button>Add another link</button>
-            <br/>
+                        <h3 class="profile-subheadings">Biography</h3>
+                        <div class="col-8">
+                            <textarea class="form-control" id="bio" rows="5" placeholder="Write a summary about yourself" title="Write Bio">Faculty, Software Engineer, AI, Space, and renewables enthusiast. </textarea>
+                        </div>
 
-            <form action="/Kanbas/Account/Profile/index.html">
-                <button> Cancel</button>
-                <button>Save Profile</button>
-            </form>
+                        <h3 class="profile-subheadings"> Links</h3>
+                        <div class="row">
+                            <div class="col wd-link-edit">
+                                Title
+                            </div>
+                            <div class="col wd-link-edit">
+                                URL
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col wd-link-form">
+                                <input class="form-control" id="link1" value="Youtube" placeholder="Name"/>
+                            </div>
+                            <div class="col-1">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <div class="col wd-link-form">
+                                <input class="form-control" id="url1" value="https://www.youtube.com/" placeholder="Link"/>
+                            </div>
+                            <div class="col-1">
+                                <i class="fas fa-times" style="color:red"></i>
+                            </div>
+                        </div>
+                        <div>
+                        <button type="button" class="btn btn-light wd-add-link-btn">
+                            Add another link
+                        </button>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block justify-content-end float-end wd-edit-save-bttns">
+                            <a href="index.html" class="btn btn-light cancel-bttn" role="button">Cancel</a>
+                            <a href="index.html" class="btn btn-light save-bttn" role="button">Save Profile</a>
+                        </div>
 
-        </td>
-    </tr>
-</table>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
