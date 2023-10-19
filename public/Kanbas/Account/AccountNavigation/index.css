@@ -1,0 +1,75 @@
+/* Bootstrap Overrides */
+.account-col{
+    flex: 0 0 195px;
+    margin-left: 21px;
+
+}
+
+.wd-account-nav.list-group {
+    border-radius: 0;
+}
+
+.wd-account-nav .list-group-item {
+    color: red;
+    border: none;
+    text-align: left;
+    padding-left: 9px;
+    padding-bottom: 16px;
+    font-size: 0.85em;
+}
+
+.wd-account-nav .list-group-item.active {
+    color: black;
+    background-color: white;
+    border-left: 3px solid black;
+}
+
+.profile-header{
+    color:red;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 9px 20px 0px;
+    margin-left: 21px;
+    font-size: 1.10em;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.profile-header .navbar-text{
+    color:gray;
+    padding-left: 23px;
+    text-decoration: none;
+}
+
+.profile-pic{
+    padding: 15px;
+}
+
+.wd-edit-profile-btn {
+    padding:5px 15px 5px 15px;
+    border: lightgray solid 1px;
+    background-color: whitesmoke;
+    color:dimgray;
+    margin-right: 25px;
+    margin-top: 10px;
+    border-radius: 0px;
+
+
+}
+
+.profile-name {
+    padding-bottom: 15px;
+}
+
+.profile-subheadings {
+
+    padding: 10px 0px 10px 0px;
+}
+
+.wd-profile-text {
+    color: dimgray;
+}
+
+.wd-profile-links {
+    text-decoration: none;
+    color:red;
+}

@@ -1,0 +1,46 @@
+.course-settings-header{
+    border-bottom: 1px solid lightgray;
+    margin-left: 21px;
+    padding-top: 15px;
+    font-size: 1.10em;
+    margin-right: 20px;
+    color: red;
+}
+
+.breadcrumb .fa {
+    font-size: 1.10em;
+    margin-right: 20px;
+}
+
+.breadcrumb-item {
+    font-size:0.9em;
+}
+
+.settings-content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.settings-content .nav-item .nav-link{
+    color: red;
+}
+
+.settings-content .nav-item .nav-link.active{
+    color: black;
+}
+
+.wd-details-modules .row {
+    margin-bottom: 4px;
+}
+
+.wd-details-modules .row .form-label{
+    font-weight: bold;
+}
+
+.wd-details-modules a{
+    text-decoration: none;
+    color: red;
+}
+.wd-nav-modules .list-group {
+    border-radius: 0;
+}

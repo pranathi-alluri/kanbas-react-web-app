@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Navigation</title>
+    <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/index.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
 </head>
 <body>
-<ul>
-    <li><a href="/Kanbas/Account/AccountNavigation/index.html">Account</a></li>
-    <li><a href="#">Dashboard</a></li>
-    <li><a href="/Kanbas/Courses/CourseNavigation/index.html">Courses</a></li>
-    <li><a href="#">Inbox</a></li>
-    <li><a href="#">History</a></li>
-    <li><a href="#">Studio</a></li>
-    <li><a href="#">Commons</a></li>
-    <li><a href="#">Help</a></li>
-</ul>
+<div class="row">
+    <div class="col navigation-col">
+        <div class="list-group wd-kanbas-navigation">
+            <a href="/Kanbas/Account/Profile/index.html" class="list-group-item list-group-item-action active" aria-current="true">
+                <i class="fa fa-user-circle fa-3x" style="color:gray"></i>
+                <br>
+                Account</a>
+            <a href="/Kanbas/Dashboard/index.html" class="list-group-item list-group-item-action">
+                <i class="fa fa-tachometer-alt fa-2x"></i>
+                <br>
+                Dashboard</a>
+            <a class="list-group-item list-group-item-action" href="/Kanbas/Courses/Home/home.html">
+                <i class="fa fa-book fa-2x"></i>
+                <br>
+                Courses</a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <i class="fa fa-calendar-alt fa-2x"></i>
+                <br>Calendar</a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <i class="fa fa-inbox fa-2x"></i>
+                <br>Inbox</a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <i class="fa fa-clock fa-2x"></i>
+                <br>History</a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <i class="fab fa-youtube fa-2x" style="color: red"></i><br>Studio</a>
+            <a class="list-group-item list-group-item-action" href="#"><i class="fa fa-sign-out-alt fa-2x" ></i><br>Commons</a>
+            <a class="list-group-item list-group-item-action" href="#"><i class="fa fa-question-circle fa-2x"></i><br>Help</a>
+        </div>
+    </div>
+    <div class="col">
+    </div>
+</div>
 
 </body>
 </html>

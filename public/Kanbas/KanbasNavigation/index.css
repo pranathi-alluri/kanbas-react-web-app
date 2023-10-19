@@ -1,0 +1,35 @@
+/* Bootstrap Overrides */
+.navigation-col{
+    flex: 0 0 85px;
+    height:100vh;
+    background-color: black;
+    padding: 0;
+    position: sticky;
+    top: 0px;
+}
+
+.wd-kanbas-navigation.list-group {
+    border-radius: 0;
+    background-color: black;
+}
+
+.wd-kanbas-navigation .list-group-item {
+    color: white;
+    background-color: black;
+    border: none;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 6px;
+    font-size: 0.7em;
+}
+
+.wd-kanbas-navigation .list-group-item.active {
+    color: red;
+    background-color: white;
+    border-color: white;
+}
+
+.wd-kanbas-navigation .fa{
+    color: red;
+    margin-bottom: 5px;
+}
