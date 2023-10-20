@@ -1,0 +1,63 @@
+ .wd-home-buttons {
+    padding-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.wd-home-buttons .standard-bttn {
+    padding:2px 5px 2px 5px;
+    border: lightgray solid 1px;
+    background-color: whitesmoke;
+    color:dimgray;
+    margin: 0 2px 0 2px;
+    border-radius: 2px;
+    font-size: 0.7em;
+}
+
+.wd-home-buttons .btn-danger {
+    padding:2px 5px 2px 5px;
+    border: lightgray solid 1px;
+    margin: 0 2px 0 2px;
+    border-radius: 2px;
+    font-size: 0.7em;
+}
+
+.wd-modules {
+    padding:20px;
+    font-size: 0.8em;
+}
+
+.wd-modules .list-group{
+    border-radius: 0;
+}
+
+.wd-modules .module-content {
+    border-left: green solid 4px;
+    padding-left: 4px;
+}
+
+.wd-modules .fa {
+    color: gray;
+}
+
+.wd-modules .module-title {
+    padding-left: 8px;
+    background-color: whitesmoke;
+}
+
+.wd-modules .check-circle {
+    color: green;
+}
+
+.wd-modules .module-link {
+    color: red;
+}
+
+.wd-modules .external-link-alt {
+    color: red;
+}
+
+.wd-modules .fa-link {
+    color:green;
+}
