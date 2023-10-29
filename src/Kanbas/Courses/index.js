@@ -10,11 +10,11 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 
-function Courses() {
+function Courses({courses}) {
     const {courseId} = useParams();
     const {pathname} = useLocation();
-    const [empty, kanbas, courses, id, screen, assignment_id] = pathname.split("/")
-    const course = db.courses.find((course) => course._id === courseId);
+    const [empty, kanbas, cour, id, screen, assignment_id] = pathname.split("/")
+    const course = courses.find((course) => course._id === courseId);
     const assignment = db.assignments.find((assignment) => assignment._id === assignment_id)
     const bars = <FaBars className={`bars`}/>
     return (
