@@ -1,21 +1,3 @@
-.course-assignment-header{
-    border-bottom: 1px solid lightgray;
-    margin-left: 21px;
-    padding-top: 15px;
-    font-size: 1.10em;
-    margin-right: 20px;
-    color: red;
-}
-
-.breadcrumb .fa {
-    font-size: 1.10em;
-    margin-right: 20px;
-}
-
-.breadcrumb-item {
-    font-size:0.9em;
-}
-
 
 .assignment-content .wd-assignment-buttons {
     padding-bottom: 15px;
@@ -82,13 +64,14 @@
     font-weight: bold;
 }
 
-.wd-assignment-modules .fa-check-circle {
+.wd-assignment-modules .check {
     color: green;
 }
 
-.wd-assignment-modules .fa-edit {
+.wd-assignment-modules .edit {
     color: green;
     padding-left:7px;
+    font-size: 1.8em;
 }
 
 .assignment-text {

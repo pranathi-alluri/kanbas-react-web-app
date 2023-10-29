@@ -1,0 +1,59 @@
+.dash-head{
+    font-size: 1.75em;
+    padding: 8px;
+}
+
+.dash-sub{
+    margin-left: 10px;
+    padding: 0 4px 4px 4px;
+    font-size: 1.25em;
+    border-bottom: lightgray solid 1px;
+}
+
+.wd-dash-course{
+    width: 260px;
+}
+
+.course-grid {
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
+.course-grid .card-img-top {
+    height: 140px;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-body {
+    margin-right: 10px;
+}
+
+.card-body .course-title {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-body .course-term {
+    font-size: 1.0em;
+    font-weight: lighter;
+    margin-bottom: 3px;
+    color: gray;
+    padding:0;
+}
+
+.card-body .course-year {
+    margin-bottom: 10px;
+    font-size: 0.7em;
+    color: gray;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

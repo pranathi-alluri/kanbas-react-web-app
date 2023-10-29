@@ -1,0 +1,51 @@
+/* Bootstrap Overrides */
+.navigation-col {
+    flex: 0 0 85px;
+    height:100vh;
+    background-color: black;
+    position: sticky;
+    padding:0;
+    top: 0px;
+
+}
+
+.navigation-col .logo {
+    padding-left: 15px;
+    align-content: center;
+    margin: 7px;
+}
+
+.wd-kanbas-navigation.list-group {
+    border-radius: 0;
+    background-color: black;
+}
+
+.wd-kanbas-navigation .list-group-item {
+    color: white;
+    background-color: black;
+    border: none;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin-bottom: 5px;
+    font-size: 0.7em;
+}
+
+.wd-kanbas-navigation .list-group-item.active {
+    color: red;
+    background-color: white;
+    border-color: white;
+}
+
+.wd-kanbas-navigation .icon{
+    color: red;
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+.wd-kanbas-navigation .account-icon{
+    color: lightgray;
+    margin-bottom: 5px;
+    font-size: 3em;
+}
+
+
