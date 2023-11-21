@@ -16,6 +16,7 @@ function Assignments() {
     const grid = <BsGripVertical className="fa"/>;
     const check = <AiFillCheckCircle className="check"/>;
     const edit = <BiEdit className="edit"/>
+    const assignmentId = "New assignment"
     const courseAssignments = assignments.filter(
         (assignment) => assignment.course === courseId);
     return (
@@ -31,10 +32,12 @@ function Assignments() {
                             {plus}
                             Group
                         </button>
-                        <button className="btn btn-danger" type="button">
+                        <Link
+                            to={`/Kanbas/Courses/${courseId}/Assignments/${assignmentId}`}
+                            className="btn btn-danger">
                             {plus}
                              Assignment
-                        </button>
+                        </Link>
                         <button className="btn btn-light standard-bttn" type="button">
                             {ellip}
                         </button>

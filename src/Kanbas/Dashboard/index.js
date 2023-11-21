@@ -38,7 +38,7 @@ function Dashboard({courses,
                     <button className="btn btn-light add-btn" onClick={addNewCourse}>
                         Add
                     </button>
-                    <button className="btn btn-light update-btn" onClick={updateCourse}>
+                    <button className="btn btn-light update-btn" onClick={() => {updateCourse(course._id)}}>
                         Update
                     </button>
                 </div>

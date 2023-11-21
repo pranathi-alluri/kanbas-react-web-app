@@ -9,12 +9,25 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function Courses({courses}) {
+function Courses() {
     const {courseId} = useParams();
     const {pathname} = useLocation();
+    const URL = "http://localhost:4000/api/courses";
+    const [course, setCourse] = useState({});
+    const findCourseById = async (courseId) => {
+        const response = await axios.get(
+            `${URL}/${courseId}`
+        );
+        setCourse(response.data);
+    };
+    useEffect(() => {
+        findCourseById(courseId);
+    }, [courseId]);
+
     const [empty, kanbas, cour, id, screen, assignment_id] = pathname.split("/")
-    const course = courses.find((course) => course._id === courseId);
     const assignment = db.assignments.find((assignment) => assignment._id === assignment_id)
     const bars = <FaBars className={`bars`}/>
     return (
